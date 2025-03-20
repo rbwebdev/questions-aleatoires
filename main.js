@@ -35,7 +35,7 @@ function clearStorage() {
 function modifyConfig() {
     closeNavbar()
     show('setup')
-    document.getElementById("themeList").innerHTML = '<h1 style="margin-top: 20px;">Thème existants</h1>' + themes.map(t => `<li class='list-group-item'>${t.name} - ${t.questionCount} questions</li>`).join('');
+    document.getElementById("themeList").innerHTML = '<h1 style="margin-top: 20px;">Thèmes existants</h1>' + themes.map(t => `<li class='list-group-item'>${t.name} - ${t.questionCount} questions</li>`).join('');
 }
 
 function showThemes() {
